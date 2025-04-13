@@ -1,0 +1,11 @@
+ID,Nom,Âge,Poids,Taille
+1,Jean,25,70,175
+2,Marie,30,,160
+3,Paul,28,85,180
+4,Lucie,,58,165
+5,Marc,25,90,175
+6,Jean,25,70,175
+7,Naomi,1000,65,155
+8,Sophie,22,50,160
+9,Paul,28,85,180
+10,Alice,30,NaN,170

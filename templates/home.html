@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataClean  - Accueil</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="home-container">
+       
+        <header class="home-header">
+            <div class="logo">
+                <i class="fas fa-broom"></i>
+                <span>DataClean </span>
+            </div>
+        </header>
+
+      
+        <main class="hero-section">
+            <div class="hero-content">
+                <h1>Transformez vos données brutes en informations exploitables</h1>
+                <p class="hero-text">
+                    Notre outil puissant nettoie, organise et optimise vos fichiers CSV automatiquement. 
+                    Gagnez du temps et améliorez la qualité de vos données en quelques clics.
+                </p>
+                
+                <div class="cta-buttons">
+                    <a href="{{ url_for('login') }}" class="btn btn-primary">
+                        <i class="fas fa-sign-in-alt"></i> Se connecter
+                    </a>
+                    <a href="{{ url_for('register') }}" class="btn btn-secondary">
+                        <i class="fas fa-user-plus"></i> S'inscrire
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="{{ url_for('static', filename='assets/img/essai3.jpeg') }}" 
+                     alt="Illustration nettoyage de données"
+                     width="1200" 
+                     height="630"
+                     loading="lazy">
+            </div>
+        </main>
+
+       
+        <section class="features-section">
+            <h2>Pourquoi choisir DataClean  ?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-magic"></i>
+                    <h3>Nettoyage automatique</h3>
+                    <p>Élimination des doublons ,valeurs manquantes et aberation en un clic</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Sécurité garantie</h3>
+                    <p>Vos données restent privées et sécurisées</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Rapidité d'exécution</h3>
+                    <p>Traitement ultra-rapide même sur gros fichiers</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="home-footer">
+            <p>© 2024 DataClean  | Tous droits réservés</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+# Environnement virtuel
+venv/
+ENV/
+env/
+.venv/
+
+# Fichiers Python compilés
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Fichiers d'environnement ou secrets
+*.env
+.env
+instance/
+
+# Bases de données SQLite
+*.sqlite3
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dossiers créés par Flask
+*.db
+*.pid
+
+# Pytest / coverage
+.coverage
+htmlcov/
+.tox/
+.cache/
+.pytest_cache/
+
+# VSCode
+.vscode/
+
+# JetBrains IDEs (PyCharm)
+.idea/
